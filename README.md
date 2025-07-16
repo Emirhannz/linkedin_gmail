@@ -13,64 +13,62 @@
 </p>
 
 <p align="center">
-  ⚙️ AI destekli, otomatik olarak kamuya açık kurumsal verileri işleyen akıllı iletişim ön hazırlık aracınız.
+  ⚙️ Your AI-powered assistant for intelligently processing publicly available corporate data and preparing outreach strategies.
 </p>
 
 ---
 
-## 📌 Proje Hakkında
+## 📌 About the Project
 
-Bu araç, firma adlarına göre internet üzerindeki kamuya açık kaynaklardan şirket sayfalarını ve çalışan bilgilerini analiz ederek, iletişim süreçlerini önceden yapılandırmak isteyen kullanıcılar için geliştirilmiştir.
+This tool is designed to help users structure their outreach processes by analyzing publicly available web sources to extract company pages and employee information based on company names.
 
-### Bu sistem özellikle:
-- **Satış ve pazarlama ekipleri**
-- **B2B danışmanlık firmaları**
-- **İnsan kaynakları uzmanları**
-- **Araştırma ekipleri**
+### Especially useful for:
+- **Sales and marketing teams**
+- **B2B consulting firms**
+- **Human resources professionals**
+- **Research and data analysis teams**
 
-için pratik bir ön veri analiz çözümüdür.
-
----
-
-## 🧠 Özellikler
-
-- 📁 Excel dosyasındaki **Firma Adı** sütununa göre, şirketlerin dijital varlıklarını (örneğin web profilleri) tespit eder  
-- 🧑‍💼 İlgili şirketlerin çalışan isimlerini çıkarır  
-- 📬 Çalışan isimlerinden **olasılık temelli e-posta tahmini** üretir  
-- 📤 Brave API ile günlük **300 ücretsiz e-posta gönderimi** yapılabilir  
-- 🔐 Gelişmiş form tanıma ve kullanıcı davranış simülasyonu desteği  
-- ♻️ Sürekli güncellenebilir ve ölçeklenebilir yapı
+This tool offers a practical pre-analysis data solution.
 
 ---
 
-## ⚙️ Nasıl Kullanılır?
+## 🧠 Features
 
-1. Excel dosyanızı yükleyin  
-2. Sistem, dosyada geçen şirket adlarına göre eşleşmeleri arar  
-3. Bulunan dijital şirket sayfaları aynı Excel’e eklenir  
-4. İlgili sayfalardan çalışan isimleri toplanır  
-5. Olası e-posta adresleri tahmin edilir  
-6. Brave API üzerinden e-posta gönderimi sağlanır
+- 📁 Detects digital presence (e.g., web profiles) of companies listed in the **Company Name** column of an Excel file  
+- 🧑‍💼 Extracts names of employees from identified company sources  
+- 📬 Generates **probability-based email predictions** from employee names  
+- 📤 Send up to **300 free emails daily** via Brave API  
+- 🔐 Supports advanced form detection and human-like interaction simulation  
+- ♻️ Continuously scalable and update-ready architecture  
 
 ---
 
-## 🧩 Teknolojiler
+## ⚙️ How It Works
+
+1. Upload your Excel file  
+2. The system searches for matches based on company names  
+3. Discovered company profiles are added to the same Excel sheet  
+4. Employee names are collected from relevant pages  
+5. Possible email addresses are predicted  
+6. Emails can be sent directly via Brave API  
+
+---
+
+## 🧩 Technologies Used
 
 - `Node.js`  
 - `Puppeteer`  
 - `xlsx`  
 - `Brave API`  
 - `Simulated Human Interaction`  
-- `Form Analysis and Adaptive Execution`
+- `Form Analysis and Adaptive Execution`  
 
 ---
 
-## ⚠️ Sorumluluk Reddi (Disclaimer)
+## ⚠️ Disclaimer
 
-Bu sistem yalnızca **kamuya açık verileri** analiz eder.  
-Kullanıcının erişim yetkisi olmayan verilere ulaşmaz, herhangi bir özel veri veya kullanıcı hesabı bilgisine müdahale etmez.  
-Kullanım, yürürlükteki yasalara ve veri gizliliği politikalarına uygun olmalıdır.
+This tool analyzes only **publicly available data**.  
+It does **not** access restricted content or interfere with any private information or user accounts.  
+Usage must comply with applicable laws and data privacy regulations.
 
 ---
-
-
