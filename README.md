@@ -73,5 +73,4 @@ Kullanım, yürürlükteki yasalara ve veri gizliliği politikalarına uygun olm
 
 ---
 
-<<<
 
