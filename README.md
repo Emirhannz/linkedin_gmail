@@ -1,108 +1,81 @@
 <p align="center">
   <a href="">
-    <img  alt="logo" src="https://raw.githubusercontent.com/linkoutapp/brand/main/scraper-transparent.svg"  height="128" width="128" />
+    <img alt="LinkedIn Scraper Logo" src="https://raw.githubusercontent.com/linkoutapp/brand/main/scraper-transparent.svg" height="128" width="128" />
   </a>
 </p>
 
-<h1 align="center">Linkout Linkedin Scraper</h1>
+<h1 align="center">LinkedIn-Scrape</h1>
 
 <p align="center">
   <a href="https://opensource.org/licenses/MIT" target="_blank">
-    <img alt="License: MIT License" src="https://img.shields.io/badge/License-MIT License-yellow.svg" />
+    <img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-yellow.svg" />
   </a>
 </p>
 
-Here you can find secure scraping using Puppeteer for different LinkedIn actions
+<p align="center">
+  🚀 AI destekli, otomatik e-posta bulucu ve LinkedIn veri toplayıcı çözümünüz.
+</p>
 
-- [x] Login
-- [x] Connection Request
-- [x] Follow message
-- [x] Visit Profile
-- [x] Like posts
-- [x] Endorse Profile
+---
 
-## Install
+## 📌 Proje Hakkında
 
-```sh
-npm install linkout-scraper puppeteer-extra --save
-```
+**LinkedIn-Scrape**, belirli şirket isimlerinden başlayarak LinkedIn'de şirket profillerini, çalışanlarını ve tahmini e-posta adreslerini bulan ve bunlara otomatik e-posta gönderebilen gelişmiş bir otomasyon sistemidir.
 
-## Setup
+Bu proje özellikle:
+- **Satış ekipleri**
+- **B2B pazarlama ajansları**
+- **Lead generation uzmanları**
+- **İK uzmanları**
 
-- Get [LI_AT](https://youtu.be/H8BVdAIyFJM) - this token will be used to authenticate to user's LinkedIn profile.
+için tasarlanmıştır.
 
-## Usage
+---
 
-```javascript
-const Linkout = require("linkout-scraper");
-const puppeteer = require("puppeteer-extra");
-const dotenv = require("dotenv");
+## 🧠 Neler Yapabiliyor?
 
-dotenv.config();
+- 📁 Excel dosyasındaki **Firma Adı** sütununa göre şirket LinkedIn sayfalarını otomatik bulur
+- 🔍 Şirketin çalışanlarını tespit eder ve isimlerini alır
+- 🔁 İsimlerden **permutasyon ile olası e-posta adreslerini üretir**
+- ✉️ Brave API üzerinden günlük **300 ücretsiz e-posta** gönderir
+- ♻️ Sürekli güncellenebilir yapı
+- 🧠 **Google ReCAPTCHA ve Yandex CAPTCHA çözümlerini otomatik geçer**
+  - *Google sık kullanımlarda CAPTCHA göstermeyebilir*
+  - *Yandex CAPTCHA önerilir*
 
-// add stealth plugin and use defaults (all evasion techniques)
-const StealthPlugin = require("puppeteer-extra-plugin-stealth");
-puppeteer.use(StealthPlugin());
+---
 
-(async () => {
-  const browser = await puppeteer.launch({
-    headless: false,
-  });
-  const page = await browser.newPage();
-  const cdp = await page.target().createCDPSession();
+## ⚙️ Nasıl Çalışır?
 
-  await page.setViewport({
-    width: 1440,
-    height: 900,
-  });
+1. Excel dosyasını seçersin  
+2. Sistem "Firma Adı" sütununu tarar  
+3. Her firmanın LinkedIn adresi bulunur ve Excel'e yazılır  
+4. Şirketteki çalışan isimleri alınır  
+5. Tahmini e-posta adresleri oluşturulur  
+6. Brave API üzerinden e-posta gönderilir 🚀
 
-  // add ghost-cursor for maximum safety
-  await Linkout.tools.loadCursor(page, false);
+---
 
-  // remove webdriver detection
-  await page.evaluateOnNewDocument(() => {
-    delete navigator.__proto__.webdriver;
-  });
+## 🧩 Kullanılan Teknolojiler
 
-  await Linkout.tools.setUserAgent(page, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36');
+- `Node.js`
+- `Puppeteer`
+- `Brave API`
+- `xlsx`
+- `Yandex ReCaptcha Solver`
+- `Google ReCaptcha AI bypass`
 
-  // Login with LinkedIn
-  await Linkout.services.login(page, cdp, {
-    cookie: LI_AT,
-  });
+---
 
-  // Connect on LinkedIn
-  await Linkout.services.connect(page, cdp, {
-    message: "Hi {{firstName}}, let's connect!",
-    url: "https://www.linkedin.com/in/sai-adarsh/",
-  });
+## 🔐 Lisans
 
-  // Send a message on LinkedIn
-  await Linkout.services.message(page, cdp, {
-    message: "Hello, {{firstName}}!",
-    url: "https://www.linkedin.com/in/sai-adarsh/",
-  });
+Bu proje [MIT Lisansı](https://opensource.org/licenses/MIT) ile lisanslanmıştır.
 
-  // Visit a LinkedIn profile
-  await Linkout.services.visit(page, cdp, {
-    url: "https://www.linkedin.com/in/sai-adarsh/",
-  });
-})();
-```
+---
 
-## Who made this project
+## 📞 İletişim & Destek
 
-This project was made by [Linkout](https://linkout.space) - LinkedIn Outreach on Autopilot, and being maintained by [Sai Adarsh](https://github.com/sai-adarsh). Any contribution is welcomed!
+Proje hakkında destek almak veya satın alma için bizimle iletişime geçin:
 
-## 🤝 Contributing
-
-[Please check our Contribution guide to get started!](https://github.com/linkoutapp/linkout-scraper/blob/main/CONTRIBUTING.md)
-
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/linkoutapp/linkout-scraper/issues?q=is%3Aopen).
-
-- Fork the repository, Clone it on your device. That's it 🎉
-- Finally make a pull request :)
-
-## 📝 License
-
-This project is [MIT License](https://opensource.org/licenses/MIT) licensed.
+📧 `emirhanzileli@gmail.com`  
+🌐 [LinkedIn](https://www.linkedin.com/in/emirhanzileli/)  
