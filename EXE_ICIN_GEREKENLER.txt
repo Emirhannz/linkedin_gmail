@@ -1,0 +1,60 @@
+# EXE Paketine Dahil Edilecek Dosya ve Klasörler Listesi
+
+## Ana Kod Dosyaları
+- main.js
+- renderer.js
+- index.html
+- package.json
+- package-lock.json (opsiyonel, ama tavsiye edilir)
+
+## Scraper ve Fonksiyon Dosyaları
+- scrape-company.js
+- find-all-company-links.js
+- excel-linkedin-updater.js
+- proxy_list_full.js
+- puppeteer_recaptcha_audio.js
+- yandex_audio_captcha_solver.js
+
+
+## Yardımcı Kütüphane ve Modüller
+- lib/ (tüm alt klasör ve dosyalarıyla)
+  - lib/helpers/
+  - lib/linkedin/
+  - lib/linkedin.service.js
+
+## Gerekli Klasörler (Veri ve Çıktı)
+- CALISANLAR/
+- CALISANLAR-JSON/
+- JSONS/
+- excels/
+- chrome-profile/
+- chromedriver/
+- scripts/
+
+## Gerekli Dosyalar
+- Kitap1.xlsx (veya uygulamanın çalışması için gerekli diğer .xlsx dosyaları)
+- aktif_proxyler.txt, ip_list.txt, ıpler.txt (proxy veya ip ile ilgili dosyalar)
+
+
+
+
+
+## Hariç Tutulacaklar
+- __tests__/ (test klasörü ve içeriği)
+- dist/ (build sonrası oluşan klasör)
+- .git/
+- .env
+- .DS_Store
+- .npmignore
+- .gitignore
+- transcript_log.txt
+- README.md, LICENSE (sadece dokümantasyon için, zorunlu değil)
+- scraping_env/
+- node_modules/ (otomatik eklenir, elle ekleme gereksiz)
+- *.md (gereksiz markdown dosyaları)
+- gereksiz log ve geçici dosyalar
+
+
+---
+
+Bu listenin dışındaki dosya ve klasörler .exe paketine dahil edilmeyecek, sadece yukarıdaki ana listede olanlar dahil edilecek.

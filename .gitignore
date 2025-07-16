@@ -1,0 +1,10 @@
+.git
+.github
+.vscode
+node_modules
+tests
+scraping_env
+chromedriver
+chrome-profile
+dist
+lib

@@ -1,0 +1,7 @@
+requests
+selenium
+pandas
+openpyxl
+pydub
+speechrecognition
+duckduckgo_search
