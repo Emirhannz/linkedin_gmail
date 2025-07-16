@@ -34,14 +34,12 @@ için tasarlanmıştır.
 
 ## 🧠 Neler Yapabiliyor?
 
-- 📁 Excel dosyasındaki **Firma Adı** sütununa göre şirket LinkedIn sayfalarını otomatik bulur
-- 🔍 Şirketin çalışanlarını tespit eder ve isimlerini alır
-- 🔁 İsimlerden **permutasyon ile olası e-posta adreslerini üretir**
-- ✉️ Brave API üzerinden günlük **300 ücretsiz e-posta** gönderir
+- 📁 Excel dosyasındaki **Firma Adı** sütununa göre şirket LinkedIn sayfalarını otomatik bulur  
+- 🔍 Şirketin çalışanlarını tespit eder ve isimlerini alır  
+- 🔁 İsimlerden **permutasyon ile olası e-posta adreslerini üretir**  
+- ✉️ Brave API üzerinden günlük **300 ücretsiz e-posta** gönderir  
+- 🔐 Gelişmiş kimlik doğrulama süreçlerini ve interaktif formları yönetebilecek altyapıya sahiptir  
 - ♻️ Sürekli güncellenebilir yapı
-- 🧠 **Google ReCAPTCHA ve Yandex CAPTCHA çözümlerini otomatik geçer**
-  - *Google sık kullanımlarda CAPTCHA göstermeyebilir*
-  - *Yandex CAPTCHA önerilir*
 
 ---
 
@@ -58,12 +56,12 @@ için tasarlanmıştır.
 
 ## 🧩 Kullanılan Teknolojiler
 
-- `Node.js`
-- `Puppeteer`
-- `Brave API`
-- `xlsx`
-- `Yandex ReCaptcha Solver`
-- `Google ReCaptcha AI bypass`
+- `Node.js`  
+- `Puppeteer`  
+- `Brave API`  
+- `xlsx`  
+- `Modern form interaction automation`  
+- `Dynamic user behavior simulation`
 
 ---
 
@@ -78,4 +76,4 @@ Bu proje [MIT Lisansı](https://opensource.org/licenses/MIT) ile lisanslanmışt
 Proje hakkında destek almak veya satın alma için bizimle iletişime geçin:
 
 📧 `emirhanzileli@gmail.com`  
-🌐 [LinkedIn](https://www.linkedin.com/in/emirhanzileli/)  
+🌐 [LinkedIn](https://www.linkedin.com/in/emirhanzileli/)
