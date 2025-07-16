@@ -1,10 +1,10 @@
 <p align="center">
   <a href="">
-    <img alt="LinkedIn Scraper Logo" src="https://raw.githubusercontent.com/linkoutapp/brand/main/scraper-transparent.svg" height="128" width="128" />
+    <img alt="Company Intelligence Logo" src="https://raw.githubusercontent.com/linkoutapp/brand/main/scraper-transparent.svg" height="128" width="128" />
   </a>
 </p>
 
-<h1 align="center">LinkedIn-Scrape</h1>
+<h1 align="center">Open Company Contact Extractor</h1>
 
 <p align="center">
   <a href="https://opensource.org/licenses/MIT" target="_blank">
@@ -13,67 +13,65 @@
 </p>
 
 <p align="center">
-  🚀 AI destekli, otomatik e-posta bulucu ve LinkedIn veri toplayıcı çözümünüz.
+  ⚙️ AI destekli, otomatik olarak kamuya açık kurumsal verileri işleyen akıllı iletişim ön hazırlık aracınız.
 </p>
 
 ---
 
 ## 📌 Proje Hakkında
 
-**LinkedIn-Scrape**, belirli şirket isimlerinden başlayarak LinkedIn'de şirket profillerini, çalışanlarını ve tahmini e-posta adreslerini bulan ve bunlara otomatik e-posta gönderebilen gelişmiş bir otomasyon sistemidir.
+Bu araç, firma adlarına göre internet üzerindeki kamuya açık kaynaklardan şirket sayfalarını ve çalışan bilgilerini analiz ederek, iletişim süreçlerini önceden yapılandırmak isteyen kullanıcılar için geliştirilmiştir.
 
-Bu proje özellikle:
-- **Satış ekipleri**
-- **B2B pazarlama ajansları**
-- **Lead generation uzmanları**
-- **İK uzmanları**
+### Bu sistem özellikle:
+- **Satış ve pazarlama ekipleri**
+- **B2B danışmanlık firmaları**
+- **İnsan kaynakları uzmanları**
+- **Araştırma ekipleri**
 
-için tasarlanmıştır.
-
----
-
-## 🧠 Neler Yapabiliyor?
-
-- 📁 Excel dosyasındaki **Firma Adı** sütununa göre şirket LinkedIn sayfalarını otomatik bulur  
-- 🔍 Şirketin çalışanlarını tespit eder ve isimlerini alır  
-- 🔁 İsimlerden **permutasyon ile olası e-posta adreslerini üretir**  
-- ✉️ Brave API üzerinden günlük **300 ücretsiz e-posta** gönderir  
-- 🔐 Gelişmiş kimlik doğrulama süreçlerini ve interaktif formları yönetebilecek altyapıya sahiptir  
-- ♻️ Sürekli güncellenebilir yapı
+için pratik bir ön veri analiz çözümüdür.
 
 ---
 
-## ⚙️ Nasıl Çalışır?
+## 🧠 Özellikler
 
-1. Excel dosyasını seçersin  
-2. Sistem "Firma Adı" sütununu tarar  
-3. Her firmanın LinkedIn adresi bulunur ve Excel'e yazılır  
-4. Şirketteki çalışan isimleri alınır  
-5. Tahmini e-posta adresleri oluşturulur  
-6. Brave API üzerinden e-posta gönderilir 🚀
+- 📁 Excel dosyasındaki **Firma Adı** sütununa göre, şirketlerin dijital varlıklarını (örneğin web profilleri) tespit eder  
+- 🧑‍💼 İlgili şirketlerin çalışan isimlerini çıkarır  
+- 📬 Çalışan isimlerinden **olasılık temelli e-posta tahmini** üretir  
+- 📤 Brave API ile günlük **300 ücretsiz e-posta gönderimi** yapılabilir  
+- 🔐 Gelişmiş form tanıma ve kullanıcı davranış simülasyonu desteği  
+- ♻️ Sürekli güncellenebilir ve ölçeklenebilir yapı
 
 ---
 
-## 🧩 Kullanılan Teknolojiler
+## ⚙️ Nasıl Kullanılır?
+
+1. Excel dosyanızı yükleyin  
+2. Sistem, dosyada geçen şirket adlarına göre eşleşmeleri arar  
+3. Bulunan dijital şirket sayfaları aynı Excel’e eklenir  
+4. İlgili sayfalardan çalışan isimleri toplanır  
+5. Olası e-posta adresleri tahmin edilir  
+6. Brave API üzerinden e-posta gönderimi sağlanır
+
+---
+
+## 🧩 Teknolojiler
 
 - `Node.js`  
 - `Puppeteer`  
-- `Brave API`  
 - `xlsx`  
-- `Modern form interaction automation`  
-- `Dynamic user behavior simulation`
+- `Brave API`  
+- `Simulated Human Interaction`  
+- `Form Analysis and Adaptive Execution`
 
 ---
 
-## 🔐 Lisans
+## ⚠️ Sorumluluk Reddi (Disclaimer)
 
-Bu proje [MIT Lisansı](https://opensource.org/licenses/MIT) ile lisanslanmıştır.
+Bu sistem yalnızca **kamuya açık verileri** analiz eder.  
+Kullanıcının erişim yetkisi olmayan verilere ulaşmaz, herhangi bir özel veri veya kullanıcı hesabı bilgisine müdahale etmez.  
+Kullanım, yürürlükteki yasalara ve veri gizliliği politikalarına uygun olmalıdır.
 
 ---
 
-## 📞 İletişim & Destek
+<<<
 
-Proje hakkında destek almak veya satın alma için bizimle iletişime geçin:
-
-📧 `emirhanzileli@gmail.com`  
-🌐 [LinkedIn](https://www.linkedin.com/in/emirhanzileli/)
